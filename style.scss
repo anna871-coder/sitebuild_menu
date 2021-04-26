@@ -1,0 +1,84 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #bc865c !important;
+}
+.st0 {
+  fill: #bc865c;
+}
+
+.hamburger {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.main {
+  margin: 50px 40px 0 40px;
+  border: 1px solid white;
+  padding: 20px 10px;
+  height: 80vh;
+}
+
+.info-1,
+.info-2 {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+}
+.info1 {
+  text-align: left;
+}
+.info-2 {
+  text-align: right;
+}
+.morella {
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  border-radius: 0 0 25px 25px;
+  background-color: white;
+  color: #bc865c;
+  font-size: 22px;
+  font-weight: 400;
+  padding: 10px 0;
+  margin: 0 40px 40px;
+  letter-spacing: 2.5px;
+}
+.h6 {
+  color: #fffcf7;
+  padding: 7px;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  letter-spacing: 2.5px;
+}
+
+@media (max-width: 900px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    min-height: 500px;
+    height: 80vh;
+    overflow: scroll;
+    .info-1,
+    .info-2 {
+      text-align: center;
+    }
+  }
+  .morella {
+    min-width: 200px;
+  }
+}
